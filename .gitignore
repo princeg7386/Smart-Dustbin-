@@ -1,0 +1,18 @@
+# Compiled binaries & build artifacts
+*.hex
+*.bin
+*.elf
+*.o
+*.a
+*.d
+
+# Arduino / IDE build directories
+build/
+.cache/
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
