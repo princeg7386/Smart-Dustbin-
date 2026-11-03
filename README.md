@@ -33,6 +33,13 @@ The complete hardware schematic and breadboard wiring layout for all sensors and
 
 ## 🏗️ System Architecture
 
+The architectural hierarchy illustrates the end-to-end data pipeline from physical sensing to local ESP32 processing, automated actuation, and real-time web telemetry:
+
+![ESP32 Smart IoT Dustbin System Architecture](docs/architecture-diagram.png)
+
+<details>
+<summary><b>🔍 Click to view Mermaid Diagram Source Code</b></summary>
+
 ```mermaid
 flowchart TD
     subgraph SENSORS["Sensing Layer (Inputs)"]
@@ -78,6 +85,8 @@ flowchart TD
     %% Web UI
     WS <==>|HTTP / JSON (500ms Poll)| DASH
 ```
+
+</details>
 
 ---
 
